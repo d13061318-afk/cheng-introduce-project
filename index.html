@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>程昱勝個人網頁</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+        }
+
+        header p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .skills-list, .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 12px;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+
+        .social-btn {
+            display: block;
+            padding: 10px;
+            background: #eef2f5;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .social-btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>關於我 — 程昱勝</h1>
+            <p>普通人 | 喜愛繪畫、卡片蒐集與漫遊老屋巷弄</p>
+        </header>
+
+        <div class="section-card">
+            <h2>基本資料</h2>
+            <div class="info-grid">
+                <div class="info-item"><strong>姓名：</strong>程昱勝</div>
+                <div class="info-item"><strong>生日：</strong>2006年3月15日</div>
+                <div class="info-item"><strong>性別：</strong>男</div>
+                <div class="info-item"><strong>學歷：</strong>大學</div>
+            </div>
+            <p style="margin-top: 20px;">
+                <strong>個人簡介：</strong>一位喜歡畫圖、卡片蒐集與漫畫收藏的普通人，也會在空閒時間穿梭於巷弄間，尋找老屋與街區的文化蹤跡。
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h2>專長與技能</h2>
+            <ul class="skills-list">
+                <li>
+                    <strong>儀器測量：</strong>會使用經緯儀、水準儀，具備一定基礎 <span class="badge">有丙級證照</span>
+                </li>
+                <li>
+                    <strong>繪圖軟體：</strong>會使用 AutoCAD 以及 SketchUp <span class="badge">有建築製圖丙級證照</span>
+                </li>
+                <li>
+                    <strong>興趣技能：</strong>喜歡素描，有畫過自己與同學的畫作
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>與我聯絡 / 社群媒體</h2>
+            <div class="social-grid">
+                <div class="info-item"><strong>電話：</strong>0918258881</div>
+                <div class="info-item"><strong>地址：</strong>台灣台南市中西區</div>
+                <a href="https://instagram.com/cheng_yusheng" class="social-btn" target="_blank">IG: @cheng_yusheng</a>
+                <a href="#" class="social-btn">FB: 程昱勝</a>
+                <a href="#" class="social-btn">YT: 程昱勝</a>
+                <a href="https://twitter.com/cheng_yusheng" class="social-btn" target="_blank">Twitter: @cheng_yusheng</a>
+                <a href="https://threads.net/@cheng_yusheng" class="social-btn" target="_blank">Threads: @cheng_yusheng</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
